@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StromanBackForward"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of StromanBackForward."
+  s.version      = "1.0.0"
+  s.summary      = "用来实现回退与前进的小插件."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "http://EXAMPLE/StromanBackForward"
+  s.homepage     = "https://github.com/AbnormalProgrammer/BackForward"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "StromanStroman" => "13207533103@163.com" }
+  s.author             = { "非主流程序员" => "13207533103@163.com" }
   # Or just: s.author    = "StromanStroman"
   # s.authors            = { "StromanStroman" => "13207533103@163.com" }
   # s.social_media_url   = "http://twitter.com/StromanStroman"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/StromanBackForward.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/AbnormalProgrammer/BackForward.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
