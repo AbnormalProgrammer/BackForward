@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+					它是用于回退和前进功能的一个小插件
                    DESC
 
   s.homepage     = "https://github.com/AbnormalProgrammer/BackForward"
