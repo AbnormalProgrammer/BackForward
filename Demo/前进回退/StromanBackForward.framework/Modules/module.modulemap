@@ -1,0 +1,6 @@
+framework module StromanBackForward {
+  umbrella header "StromanBackForward.h"
+
+  export *
+  module * { export * }
+}
