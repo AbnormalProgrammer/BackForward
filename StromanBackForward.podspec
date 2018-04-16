@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StromanBackForward"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "用来实现回退与前进的小插件."
 
   # This description is used to generate tags and improve search results.
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   s.vendored_frameworks = 'StromanBackForward.framework'
-  s.framework  = "Foundation"
+#s.framework  = "Foundation"
   #s.frameworks = "Foundation", "AnotherFramework"
 
   # s.library   = "iconv"
