@@ -22,8 +22,13 @@
 @end
 
 @interface BackForwardStack : NSObject
+/**
+ 自定义的初始化方法
 
-@property (weak, nonatomic) id<BackForwardStackDelegate> delegate;
+ @param delegate 代理对象
+ @return 实例
+ */
+- (instancetype)initWithDelegate:(id<BackForwardStackDelegate>)delegate;
 
 /**
  回退操作，如果已经达到栈底就返回nil。
@@ -47,6 +52,11 @@
  @param object 某状态对象
  */
 - (void)addStatusObject:(id)object;
+
+/**
+ 清空所有的已经保存的状态对象，把状态恢复到一开始的样子。
+ */
+- (void)clearAllState;
 
 /**
  打印当前栈的信息。

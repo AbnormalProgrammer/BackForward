@@ -23,8 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.statusStack = [[BackForwardStack alloc] init];
-    self.statusStack.delegate = self;
+    self.statusStack = [[BackForwardStack alloc] initWithDelegate:self];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
