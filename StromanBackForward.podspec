@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "StromanBackForward"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "用来实现回退与前进的小插件."
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -116,8 +116,9 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "StromanBackForward"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.vendored_frameworks = 'StromanBackForward.framework'
+  s.framework  = "Foundation"
+  #s.frameworks = "Foundation", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
