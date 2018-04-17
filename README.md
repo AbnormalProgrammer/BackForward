@@ -5,7 +5,7 @@
 
 ## Demo演示
 <p align="center" >
-![演示](/images/demo.gif)
+<img src="/images/demo.gif" alt="演示" title="演示">
 </p>
 
 ## API&使用方法
