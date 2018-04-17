@@ -9,7 +9,7 @@
 </p>
 
 ## API&使用方法
->你需要把状态数据封装成数据模型对象。**注意!**你需要把初始状态或者重置以后的状态也封装成状态对象传递给该容器，这样才能保证该容器正常工作。
+>你需要把状态数据封装成数据模型对象。__注意!__你需要把初始状态或者重置以后的状态也封装成状态对象传递给该容器，这样才能保证该容器正常工作。
 >使用的时候在Podfile中添加`pod 'StromanBackForward', '~> 1.0.4'`。
 >使用的时候直接加入`#import <StromanBackForward/StromanBackForward.h>`即可。
 >你最好让使用的类遵循`BackForwardStackDelegate`协议。
