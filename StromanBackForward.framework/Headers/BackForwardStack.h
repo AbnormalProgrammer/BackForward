@@ -54,6 +54,18 @@
 - (void)addStatusObject:(id)object;
 
 /**
+ 有的时候你希望传入的对象被深度复制然后再存储就可以使用此方法。
+ 使用此方法的前提是你传入的对象所属的类已经遵循了NSCopying或者NSMutableCopying协议。
+ 并且已经实现了copyWithZone方法。
+ 比方说有的时候模型记录的是本类的实时状态，但是你要存储的确实该类的不同时刻的状态，
+ 所以模型对象的地址是不变的，所以你会发现已经存入的对象都是一样的，
+ 那么本方法就是专门为这种情况提供的接口。
+
+ @param object 希望被深度复制处理的对象。
+ */
+- (void)addCopiedStatusObject:(id)object;
+
+/**
  清空所有的已经保存的状态对象，把状态恢复到一开始的样子。
  */
 - (void)clearAllState;

@@ -10,7 +10,7 @@
 
 ## API&使用方法
 >你需要把状态数据封装成数据模型对象。**注意**你需要把初始状态或者重置以后的状态也封装成状态对象传递给该容器，这样才能保证该容器正常工作。<br>
->使用的时候在Podfile中添加`pod 'StromanBackForward', '~> 1.0.4'`。<br>
+>使用的时候在Podfile中添加`pod 'StromanBackForward', '~> 1.1.0'`。<br>
 >使用的时候直接加入`#import <StromanBackForward/StromanBackForward.h>`即可。<br>
 >你最好让使用的类遵循`BackForwardStackDelegate`协议。<br>
 >1. `- (void)currentStackStatusBackObjectsNumber:(NSInteger)backNumber forwardObjectsNumber:(NSInteger)forwardNumber;`:回调，用来回调此时可以回退多少个状态和恢复多少个状态。
@@ -18,8 +18,9 @@
 >3. `- (BackForwardStackModel *)backAction`:用于撤销功能，它回退出一个容器模型`BackForwardStackModel`，这个模型带有一个标志位`canBack`用来判断弹出来的状态对象是否可用。
 >4. `- (BackForwardStackModel *)forwardAction;`:用于恢复功能，它包含了同样类型的数据模型，它的标志位`canForward`用于判断弹出来的状态对象是否可用。
 >5. `- (void)addStatusObject:(id)object;`:它用于添加状态对象。
->6. `- (void)clearAllState;`:用于清空所有的状态。
->7. `- (void)printCurrentStack;`:用于打印容器中的状态。
+>6. `- (void)addCopiedStatusObject:(id)object;`:它用于添加状态对象，如果传入的对象需要深度复制的话，前提是该对象实现了深度复制。 
+>7. `- (void)clearAllState;`:用于清空所有的状态。
+>8. `- (void)printCurrentStack;`:用于打印容器中的状态。
 
 ## 适用平台
 >1. iOS平台，要求iOS 8.0及以上。
