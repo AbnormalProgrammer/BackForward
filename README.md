@@ -10,7 +10,13 @@
 
 ## API&使用方法
 >你需要把状态数据封装成数据模型对象。**注意**你需要把初始状态或者重置以后的状态也封装成状态对象传递给该容器，这样才能保证该容器正常工作。<br>
->使用的时候在Podfile中添加`pod 'StromanBackForward', '~> 1.1.0'`。<br>
+>使用的时候在Podfile中添加，示例如下:
+```
+platform :ios, '10.0'
+target '示例工程' do
+pod 'StromanBackForward', '~> 1.1.0'
+end
+```
 >使用的时候直接加入`#import <StromanBackForward/StromanBackForward.h>`即可。<br>
 >你最好让使用的类遵循`BackForwardStackDelegate`协议。<br>
 >1. `- (void)currentStackStatusBackObjectsNumber:(NSInteger)backNumber forwardObjectsNumber:(NSInteger)forwardNumber;`:回调，用来回调此时可以回退多少个状态和恢复多少个状态。
