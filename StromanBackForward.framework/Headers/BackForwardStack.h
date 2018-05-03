@@ -22,6 +22,9 @@
 @end
 
 @interface BackForwardStack : NSObject
+
+@property (assign, nonatomic) BOOL isStackEmpty;//就是说栈里面是不是没有状态对象。
+
 /**
  自定义的初始化方法
 
@@ -69,6 +72,18 @@
  清空所有的已经保存的状态对象，把状态恢复到一开始的样子。
  */
 - (void)clearAllState;
+
+/**
+ 清空除了第一个状态对象以外的所有状态。
+ */
+- (void)clearAllStateExceptFirstOne;
+
+/**
+ 获取栈中第一个状态对象。
+
+ @return 状态对象
+ */
+- (BackForwardStackModel *)gainFirstStatusObject;
 
 /**
  打印当前栈的信息。

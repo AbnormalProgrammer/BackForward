@@ -28,6 +28,16 @@
 }
 
 - (void)currentStackStatusBackObjectsNumber:(NSInteger)backNumber forwardObjectsNumber:(NSInteger)forwardNumber {
+    if (backNumber == 0) {
+        self.backButton.backgroundColor = [UIColor yellowColor];
+    } else {
+        self.backButton.backgroundColor = [UIColor clearColor];
+    }
+    if (forwardNumber == 0) {
+        self.forwardButton.backgroundColor = [UIColor yellowColor];
+    } else {
+        self.forwardButton.backgroundColor = [UIColor clearColor];
+    }
 }
 
 - (IBAction)backAction:(UIButton *)sender {
@@ -56,6 +66,10 @@
     } else {
         self.testTextView.text = model.statusObject;
     }
+}
+
+- (IBAction)clearButtonAction:(UIButton *)sender {
+    [self.statusStack clearAllStateExceptFirstOne];
 }
 
 - (IBAction)printAction:(UIButton *)sender {

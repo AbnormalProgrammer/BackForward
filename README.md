@@ -14,7 +14,7 @@
 ```
 platform :ios, '10.0'
 target '示例工程' do
-pod 'StromanBackForward', '~> 1.1.0'
+pod 'StromanBackForward', '~> 1.2.0'
 end
 ```
 >使用的时候直接加入`#import <StromanBackForward/StromanBackForward.h>`即可。<br>
@@ -27,6 +27,8 @@ end
 >6. `- (void)addCopiedStatusObject:(id)object;`:它用于添加状态对象，如果传入的对象需要深度复制的话，前提是该对象实现了深度复制。 
 >7. `- (void)clearAllState;`:用于清空所有的状态。
 >8. `- (void)printCurrentStack;`:用于打印容器中的状态。
+>9. `isStackEmpty`:检查容器是否为空。
+>10. `- (void)clearAllStateExceptFirstOne`:清空除了第一个状态对象以外的所有状态。
 
 ## 适用平台
 >1. iOS平台，要求iOS 8.0及以上。

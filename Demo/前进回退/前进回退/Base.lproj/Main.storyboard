@@ -57,14 +57,23 @@
                                     <action selector="printAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vUh-Iw-gUf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYZ-3X-bq0">
+                                <rect key="frame" x="156.5" y="348.5" width="62" height="30"/>
+                                <state key="normal" title="清空按钮"/>
+                                <connections>
+                                    <action selector="clearButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4n-ca-GRm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VUZ-cn-f7y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4hw-zB-yCw"/>
                             <constraint firstItem="6fn-yr-yaf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dpp-Xu-YPc"/>
+                            <constraint firstItem="oYZ-3X-bq0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgQ-Un-cY9"/>
                             <constraint firstItem="FPx-J2-EhK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKx-op-1fu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6fn-yr-yaf" secondAttribute="bottom" id="fKr-zk-Whh"/>
                             <constraint firstItem="6fn-yr-yaf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fs9-Up-Ia7"/>
+                            <constraint firstItem="oYZ-3X-bq0" firstAttribute="top" secondItem="VUZ-cn-f7y" secondAttribute="bottom" id="iaY-xN-GyN"/>
                             <constraint firstItem="6fn-yr-yaf" firstAttribute="top" secondItem="FPx-J2-EhK" secondAttribute="bottom" id="kqk-zF-a14"/>
                             <constraint firstItem="VUZ-cn-f7y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8c-3q-zu6"/>
                         </constraints>
