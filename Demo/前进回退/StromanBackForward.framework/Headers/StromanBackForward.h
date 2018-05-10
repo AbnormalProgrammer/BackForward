@@ -2,7 +2,7 @@
 //  StromanBackForward.h
 //  StromanBackForward
 //
-//  Created by Stroman on 2018/4/14.
+//  Created by Stroman on 2018/5/10.
 //  Copyright © 2018年 Stroman. All rights reserved.
 //
 
@@ -18,5 +18,4 @@ FOUNDATION_EXPORT const unsigned char StromanBackForwardVersionString[];
 
 #import <StromanBackForward/BackForwardStack.h>
 #import <StromanBackForward/BackForwardStackModel.h>
-
 
