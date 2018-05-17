@@ -14,7 +14,7 @@
 ```
 platform :ios, '10.0'
 target '示例工程' do
-pod 'StromanBackForward', '~> 1.2.0'
+pod 'StromanBackForward', '~> 1.2.1'
 end
 ```
 >使用的时候直接加入`#import <StromanBackForward/StromanBackForward.h>`即可。<br>
